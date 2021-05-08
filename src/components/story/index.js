@@ -3,7 +3,7 @@ import React from 'react';
 const Story = (props) => {
     return (
         <div>
-            ........stories here
+            ........stories list
         </div>
     )
 }
