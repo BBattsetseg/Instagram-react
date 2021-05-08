@@ -1,0 +1,46 @@
+.post {
+    .card {
+        .collection-item {
+            height: 50px !important;
+            margin-bottom: 0 !important;
+            a {
+                margin-top: 2.5%;
+                i {
+                    vertical-align: middle !important;
+                }
+            }
+            .groupIcons {
+                height: fit-content;
+                .icons {
+                    padding: 0 !important;
+                    display: flex;
+                    justify-content: space-between;
+                    top: 0 !important;
+                }
+    
+                a {              
+                        margin-top: 0 !important;
+                   
+                }
+            }
+    
+            .likedBy{
+                margin-bottom: 0 !important;
+                font-size: 13px;
+            }
+            .dateTime{
+                color: grey !important;
+                margin-bottom: 3px !important;  
+                font-size: 12px;            
+            }
+            .hr{
+                border-bottom: 0.7px solid rgb(219, 219, 219);
+            }
+    
+        }
+    }
+}
+
+.red {
+    color: red;
+}

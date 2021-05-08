@@ -1,0 +1,31 @@
+nav {
+    background-color: white !important;
+    padding: 8px 0;
+    
+    .input-field {
+        color: black;
+        border: 1px solid grey;
+        border-radius: 3px;
+        margin: 10px 0 !important;
+        padding: 3px !important;
+        input {
+            margin: 0 !important;
+            font-size: 11px;
+        }
+
+        label {
+            left: 0px !important;
+            margin: 0 !important;
+            i {
+                color: grey !important;
+            }
+        }
+
+        i {
+            line-height: normal !important;
+            top: -2px !important;
+            right: 0 !important;
+            margin: 0 !important;
+        }
+    }
+}
