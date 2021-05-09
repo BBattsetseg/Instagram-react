@@ -1,9 +1,8 @@
 import React from 'react';
 import Nav from './components/navbar';
 import Posts from './components/posts';
-import Stories from './components/stories';
-
-
+import stories from './components/stories';
+import Story from './components/story';
 
 const App = () => { 
     let authors = [ 
@@ -18,10 +17,16 @@ const App = () => {
     ]
 
     return (
-        <div className="container">
-            <Nav />
-            <Stories authors={authors}/>
-            <Posts authors={authors}/>
+        <div>
+            <div className="container" >
+                <Nav />
+            </div>  
+            <div>
+                <Story {...stories[0]}/>
+            </div>        
+            <div  className="container">
+                <Posts authors={authors}/> 
+            </div>
         </div>
     )
 }
