@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Nav from './components/navbar';
 import Posts from './components/posts';
-import stories from './components/stories';
 import Story from './components/story';
+import StoryList from './components/storyList';
+
 
 const App = () => { 
+const [isStory, setIsStory] = useState(true);
+
     let authors = [ 
         {
         image: 'https://i.imgur.com/QhMap7L.jpeg',
@@ -14,19 +17,25 @@ const App = () => {
         image: 'https://i.imgur.com/QhMap7L.jpeg',
         name: 'Profile Name-02'
         }
-    ]
+    ];
 
     return (
         <div>
-            <div className="container" >
-                <Nav />
-            </div>  
-            <div>
-                <Story {...stories[0]}/>
-            </div>        
-            <div  className="container">
-                <Posts authors={authors}/> 
-            </div>
+            {
+                isStory ?
+                <Story/> :
+                <div>
+                    <div className="container" >
+                        <Nav />
+                    </div>  
+                    <div className="container row">
+                        <div className="col s12 m8">
+                            <StoryList setIsStory={setIsStory}/>
+                            <Posts authors={authors}/> 
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
     )
 }

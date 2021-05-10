@@ -21,10 +21,8 @@ const Post = (props) => {
       }
 
     return (
-        <div>
             <div className="row">
-                <div className="post col s12 m8">
-                    <div className="card">
+                <div className="post card">
                         <ul className="collection">
                             <li className="collection-item avatar valign-wrapper">
                                 <img src={props.avatarUrl} alt="" className="circle"/>
@@ -76,9 +74,8 @@ const Post = (props) => {
                             </li>
                         </ul>
                     </div>
-                </div>
             </div>
-        </div>
+     
     )
 }
 

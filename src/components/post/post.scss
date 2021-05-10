@@ -1,7 +1,10 @@
-.post {
+    .collection {
+        border: none !important;
+        margin: 0 !important;
+    }
     .card {
         .collection-item {
-            height: 50px !important;
+            height: 40px !important;
             margin-bottom: 0 !important;
             a {
                 margin-top: 2.5%;
@@ -39,7 +42,7 @@
     
         }
     }
-}
+
 
 .red {
     color: red;
